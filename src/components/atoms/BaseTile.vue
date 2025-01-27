@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import type { ISound } from '@/interfaces/sound.interface'
-import { computed, ref, type PropType, type Ref } from 'vue'
+import { computed, ref, onMounted, onUnmounted, type PropType, type Ref } from 'vue'
 
 defineOptions({ name: 'BaseTile' })
 
@@ -17,9 +17,11 @@ const props = defineProps({
     required: true,
   },
 })
+
 const soundPath = new URL(`../../assets/sounds/${props.sound.soundName}`, import.meta.url).href
 const audio = new Audio(soundPath)
 const isAudioPlaying: Ref<boolean> = ref(false)
+
 const iconName = computed(() => `fa-solid ${props.sound.iconName}`)
 const computedClass = computed(() => {
   return {
@@ -27,6 +29,7 @@ const computedClass = computed(() => {
     'base-tile--activated': isAudioPlaying.value,
   }
 })
+
 function handlePlaySound() {
   if (isAudioPlaying.value === true) {
     audio.pause()
@@ -44,27 +47,45 @@ function handlePlaySound() {
 function toggleIsAudioPlaying() {
   isAudioPlaying.value = !isAudioPlaying.value
 }
+
+function handleAudioEnded() {
+  if (!props.sound.shouldRepeat) {
+    toggleIsAudioPlaying()
+  }
+}
+
+// Setup and cleanup event listeners
+onMounted(() => {
+  audio.addEventListener('ended', handleAudioEnded)
+})
+
+onUnmounted(() => {
+  audio.removeEventListener('ended', handleAudioEnded)
+})
 </script>
 
 <style scoped lang="scss">
 $size-tile: 112px;
+
 .base-tile {
   @include prevent-select();
   @include flex(column, center, center, nowrap, $spacing-sm);
+  text-align: center;
   i {
     font-size: $spacing-xxxl;
   }
+
   h2 {
     font-size: $spacing-lg;
-    @include ellipsis();
   }
+
   width: $size-tile;
   height: $size-tile;
   border-radius: $border-xxl * 2;
   background-color: $background-tile-color;
-
   padding: $spacing-md;
   color: $gray-light;
+
   &--activated {
     color: $gray-light;
     background-color: $background-tile-activated-color;
