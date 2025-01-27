@@ -1,0 +1,21 @@
+// border size definition
+$base-spacing: 4px;
+$spacing-xxs: $base-spacing; // 4px
+$spacing-xs: $base-spacing * 2; // 8px
+$spacing-sm: $base-spacing * 3; // 12px
+$spacing-md: $base-spacing * 4; // 16px
+$spacing-lg: $base-spacing * 5; // 20px
+$spacing-xl: $base-spacing * 6; // 24px
+$spacing-xxl: $base-spacing * 7; // 28px
+$spacing-xxxl: $base-spacing * 8; // 32px
+
+// border size definition
+$base-border: 1px;
+$border-xxs: $base-border;
+$border-xs: $base-border * 2;
+$border-sm: $base-border * 3;
+$border-md: $base-border * 4;
+$border-lg: $base-border * 5;
+$border-xl: $base-border * 6;
+$border-xxl: $base-border * 7;
+$border-xxxl: $base-border * 8;
