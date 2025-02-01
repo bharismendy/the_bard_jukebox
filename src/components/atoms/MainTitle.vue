@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup lang="ts">
-defineOptions({ name: 'MainTitle' })
+defineOptions({ name: "MainTitle" });
 defineProps({
   title: {
     type: String,
@@ -15,14 +15,14 @@ defineProps({
     type: String,
     required: true,
   },
-})
+});
 </script>
 <style scoped lang="scss">
 $color-main-title: #eab308;
 .main-title {
   @include prevent-select();
   @include flex(column, center, center);
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   color: $color-main-title;
   font-weight: bold;
   &__title {
