@@ -1,7 +1,9 @@
 <template>
   <div class="main-title">
     <h1 class="main-title__title">{{ title }}</h1>
-    <span class="main-title__description">{{ description }}</span>
+    <span v-if="description" class="main-title__description">{{
+      description
+    }}</span>
   </div>
 </template>
 <script setup lang="ts">
@@ -13,7 +15,7 @@ defineProps({
   },
   description: {
     type: String,
-    required: true,
+    required: false,
   },
 });
 </script>

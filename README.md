@@ -45,9 +45,9 @@ The application will be available at `http://localhost:3000`. 🌍
 
 ## 🎮 Usage
 
-- 🎵 **Adding Sounds**: Place audio files in the `public/sounds` folder. The app will auto-detect them.
+- 🎵 **Adding Sounds**: Place audio files in the `public/sounds` folder and add it to constant/ListOfSound.ts. The app will auto-detect them.
 - 🏷 **Organizing Sounds**: Group sounds by categories for easy access.
-- 🎚 **Playback Controls**: Play, pause, and adjust volume directly from the UI.
+- 🎚 **Playback Controls**: Play, pause from the UI.
 
 ## 🤝 Contributing
 

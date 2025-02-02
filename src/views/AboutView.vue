@@ -1,8 +1,14 @@
 <template>
   <div class="about">
-    <MainTitle title="About The roll'n soundpad" />
+    <div class="about__tilte">
+      <RouterLink to="/" class="about__tilte__back">
+        <i class="fa-solid fa-arrow-left"></i>
+      </RouterLink>
+      <MainTitle title="About The roll'n soundpad" />
+    </div>
+
     <p>
-      Welcome to <strong>🎲 RPG Sound Board 🎲 </strong>, a project designed to
+      Welcome to <strong>🎲 RPG Sound Board 🎲</strong>, a project designed to
       enhance your tabletop RPG sessions with immersive sounds and music! 🎶🔥
     </p>
     <h2>👨‍💻 Author</h2>
@@ -35,6 +41,17 @@ import MainTitle from "@/components/atoms/MainTitle.vue";
 
 <style scoped lang="scss">
 .about {
+  &__tilte {
+    @include flex(row, center, center, wrap, $spacing-xxl);
+    &__back {
+      @include flex(row, center, center, wrap, $spacing-xxl);
+      width: $spacing-xxxl * 2;
+      height: $spacing-xxxl * 2;
+      border: $border-sm solid $gray-light;
+      border-radius: $border-xxxl * 4;
+    }
+  }
+
   @include flex(column, center, center, wrap, $spacing-xxl);
   min-height: calc(var(--vh, 1vh) * 100);
   background-color: $background-color;
