@@ -5,10 +5,10 @@
 </template>
 
 <script setup lang="ts">
-import { listOfSound } from '@/constants/listOfSounds'
-import BaseTile from '@/components/atoms/BaseTile.vue'
+import { listOfSound } from "@/constants/ListOfSounds";
+import BaseTile from "@/components/atoms/BaseTile.vue";
 
-defineOptions({ name: 'soundGrid' })
+defineOptions({ name: "soundGrid" });
 </script>
 
 <style scoped lang="scss">
