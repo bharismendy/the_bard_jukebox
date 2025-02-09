@@ -16,7 +16,11 @@ defineOptions({ name: "soundGrid" });
   @include grid(
     repeat(6, calc(100% / 6)),
     repeat(4, calc(100% / 5)),
-    $spacing-xxl
+    $spacing-xxl,
+    center,
+    center,
+    center,
+    center
   );
 }
 </style>

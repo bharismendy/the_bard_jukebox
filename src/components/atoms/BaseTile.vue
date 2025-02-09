@@ -43,7 +43,7 @@ const soundVolume: ModelRef<number> = defineModel("soundVolume", {
 });
 const soundPath = new URL(
   `../../assets/sounds/${props.sound.soundName}`,
-  import.meta.url
+  import.meta.url,
 ).href;
 const audio = new Audio(soundPath);
 const isAudioPlaying: Ref<boolean> = ref(false);
