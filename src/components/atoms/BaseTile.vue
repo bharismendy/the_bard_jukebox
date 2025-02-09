@@ -43,7 +43,7 @@ const soundVolume: ModelRef<number> = defineModel("soundVolume", {
 });
 const soundPath = new URL(
   `../../assets/sounds/${props.sound.soundName}`,
-  import.meta.url,
+  import.meta.url
 ).href;
 const audio = new Audio(soundPath);
 const isAudioPlaying: Ref<boolean> = ref(false);
@@ -103,6 +103,7 @@ $size-tile-width: 200px;
 $size-tile-height: 110px;
 
 .base-tile {
+  font-family: "MedievalSharp", cursive;
   @include prevent-select();
   @include flex(column, center, center, nowrap, $spacing-sm);
   text-align: center;
@@ -123,7 +124,7 @@ $size-tile-height: 110px;
     }
 
     &__name {
-      font-size: $spacing-lg;
+      font-size: $spacing-xl;
     }
   }
 
