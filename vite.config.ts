@@ -5,7 +5,7 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import vueDevTools from "vite-plugin-vue-devtools";
 
 export default defineConfig({
-  base: "/rpg_sound_booard/",
+  base: "/the_bard_jukebox/",
   plugins: [vue(), vueJsx(), vueDevTools()],
   css: {
     preprocessorOptions: {

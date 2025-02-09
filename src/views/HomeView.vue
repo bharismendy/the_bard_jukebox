@@ -3,7 +3,7 @@
     <SoundpadLayout />
     <div class="home-view__link">
       <RouterLink to="about"> <u>🚀 About</u> </RouterLink>
-      <a href="https://github.com/bharismendy/rpg_sound_booard">
+      <a href="https://github.com/bharismendy/the_bard_jukebox">
         <u><i class="fa-brands fa-github"></i> Github</u>
       </a>
     </div>

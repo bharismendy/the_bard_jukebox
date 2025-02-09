@@ -17,8 +17,8 @@ Follow these steps to set up RPG Sound Board locally:
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/bharismendy/rpg_sound_booard.git
-cd rpg_sound_booard
+git clone https://github.com/bharismendy/the_bard_jukebox.git
+cd the_bard_jukebox
 ```
 
 ### 2️⃣ Install Dependencies
