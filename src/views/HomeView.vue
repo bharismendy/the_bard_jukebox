@@ -16,13 +16,15 @@ import SoundpadLayout from "@/layout/SoundpadLayout.vue";
 
 <style scoped lang="scss">
 .home-view {
-  @include flex(column, center, center, wrap, $spacing-xxl);
+  @include flex(column, space-between, center, wrap, $spacing-xxl);
   min-height: calc(var(--vh, 1vh) * 100);
   background-color: $background-color;
   color: $gray-light;
   padding: $spacing-xxxl;
   &__link {
-    @include flex(row, center, center, wrap, $spacing-xxl);
+    @include flex(row, center, center, wrap, $spacing-xxxl);
+    padding-top: $spacing-xxxl;
+    width: 50vw;
   }
 }
 </style>

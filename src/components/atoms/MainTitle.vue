@@ -20,7 +20,7 @@ defineProps({
 });
 </script>
 <style scoped lang="scss">
-$color-main-title: #eab308;
+$color-main-title: #fdf0d5;
 .main-title {
   @include prevent-select();
   @include flex(column, center, center);

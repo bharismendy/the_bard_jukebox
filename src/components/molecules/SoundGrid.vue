@@ -13,7 +13,10 @@ defineOptions({ name: "soundGrid" });
 
 <style scoped lang="scss">
 .sound-grid {
-  @include flex(row, flex-start, center, wrap, $spacing-xxl);
-  width: 50vw;
+  @include grid(
+    repeat(6, calc(100% / 6)),
+    repeat(4, calc(100% / 5)),
+    $spacing-xxl
+  );
 }
 </style>

@@ -104,7 +104,9 @@ $size-tile-height: 110px;
 
 .base-tile {
   &__name {
-    @include flex(row, center, center, nowrap, $spacing-sm);
+    width: 100%;
+    padding: 0 $spacing-sm;
+    @include flex(row, space-between, center, nowrap, $spacing-sm);
   }
   @include prevent-select();
   @include flex(column, center, center, nowrap, $spacing-sm);
@@ -119,10 +121,11 @@ $size-tile-height: 110px;
 
   width: $size-tile-width;
   height: $size-tile-height;
-  border-radius: $border-xxl * 2;
+  border: 2px solid #003049;
   background-color: $background-tile-color;
   padding: $spacing-md;
   color: $gray-light;
+  box-shadow: #669bbc33 calc(-1 * $spacing-sm) $spacing-sm 0px 0px;
 
   &--activated {
     color: $gray-light;

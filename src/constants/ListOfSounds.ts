@@ -163,4 +163,11 @@ export const listOfSound: Array<ISound> = [
     soundName: "568776__gertraut_hecher__medieval-tune-knights-castle.wav",
     shouldRepeat: true,
   },
+  {
+    soundVolume: 0.3,
+    name: "Owl in the night",
+    iconName: "fa-moon",
+    soundName: "666760__opalmirage__owl-at-night.wav",
+    shouldRepeat: true,
+  },
 ];

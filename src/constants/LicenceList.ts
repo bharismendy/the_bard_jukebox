@@ -178,4 +178,11 @@ export const soundLicenses: Array<ISoundLicence> = [
     url: "https://theambientfort.itch.io/rpgmakerskit1",
     license: "Attribution NonCommercial 4.0",
   },
+  {
+    icon: "🦉",
+    name: "owl at night",
+    author: "opalmirage",
+    url: "https://freesound.org/s/666760/",
+    license: "Creative Commons 0",
+  },
 ];
