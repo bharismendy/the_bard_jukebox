@@ -121,7 +121,7 @@ $size-tile-height: 110px;
 
   width: $size-tile-width;
   height: $size-tile-height;
-  border: 2px solid #003049;
+  border: $border-xs solid #003049;
   background-color: $background-tile-color;
   padding: $spacing-md;
   color: $gray-light;
