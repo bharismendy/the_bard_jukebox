@@ -49,8 +49,28 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: List project files before build
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Package.json contents:"
+          cat package.json
+
       - name: Build project
-        run: pnpm run build
+        run: |
+          echo "Running build command..."
+          pnpm run build
+          echo "Build completed. Checking dist directory:"
+          ls -la dist || echo "dist directory not found"
+
+      - name: Debug build output
+        if: always()
+        run: |
+          echo "Current directory structure:"
+          pwd
+          ls -R
+          echo "Build output location check:"
+          find . -name "dist" -type d
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -58,7 +78,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ../../dist # Adjust this to your build output directory
+          path: ./dist
 
   deploy:
     environment:
