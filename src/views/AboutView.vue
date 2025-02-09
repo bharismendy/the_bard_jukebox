@@ -4,7 +4,7 @@
       <RouterLink to="/" class="about__tilte__back">
         <i class="fa-solid fa-arrow-left"></i>
       </RouterLink>
-      <MainTitle title="About The roll'n soundpad" />
+      <MainTitle title="About The Bard’s Jukebox" />
     </div>
 
     <p>

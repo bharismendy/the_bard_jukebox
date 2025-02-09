@@ -1,7 +1,7 @@
 <template>
   <div class="soundpad-layout">
     <MainTitle
-      title="The roll'n soundpad"
+      title="The Bard’s Jukebox"
       description="Enhance your adventure"
     />
     <SoundGrid />
