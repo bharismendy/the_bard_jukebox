@@ -1,8 +1,8 @@
 <template>
   <div :class="computedClass" @click.stop="handlePlaySound">
-    <div class="base-tile__name">
-      <i :class="iconName"></i>
-      <h2>{{ sound.name }}</h2>
+    <div class="base-tile__text">
+      <i class="base-tile__text__icon" :class="iconName"></i>
+      <p class="base-tile__text__name">{{ sound.name }}</p>
     </div>
     <input
       v-model="soundVolume"
@@ -103,22 +103,9 @@ $size-tile-width: 200px;
 $size-tile-height: 110px;
 
 .base-tile {
-  &__name {
-    width: 100%;
-    padding: 0 $spacing-sm;
-    @include flex(row, space-between, center, nowrap, $spacing-sm);
-  }
   @include prevent-select();
   @include flex(column, center, center, nowrap, $spacing-sm);
   text-align: center;
-  i {
-    font-size: $spacing-xxxl;
-  }
-
-  h2 {
-    font-size: $spacing-lg;
-  }
-
   width: $size-tile-width;
   height: $size-tile-height;
   border: $border-xs solid #003049;
@@ -126,6 +113,19 @@ $size-tile-height: 110px;
   padding: $spacing-md;
   color: $gray-light;
   box-shadow: #669bbc33 calc(-1 * $spacing-sm) $spacing-sm 0px 0px;
+
+  &__text {
+    width: 100%;
+    padding: 0 $spacing-sm;
+    @include flex(row, space-between, center, nowrap, $spacing-sm);
+    &__icon {
+      font-size: $spacing-xxxl;
+    }
+
+    &__name {
+      font-size: $spacing-lg;
+    }
+  }
 
   &--activated {
     color: $gray-light;
