@@ -6,9 +6,9 @@ Welcome to the **RPG Sound Board**! This application enhances your tabletop role
 
 - 🎼 **Customizable Sound Library** – Add and manage your own sound effects and music.
 - 🔊 **Real-Time Playback** – Play multiple sounds simultaneously with volume control.
-- 🗂 **Categorization** – Organize sounds into categories for quick access.
 - 🌐 **Web-Based UI** – Built with **Vue.js** and **Vite**, offering a responsive and fast user experience.
 - ⚡ **Bun-Powered** – Uses [Bun](https://bun.sh/) for lightning-fast package management and runtime performance.
+- **[Live Demo](https://bharismendy.github.io/the_bard_jukebox/)**
 
 ## 📥 Installation
 
