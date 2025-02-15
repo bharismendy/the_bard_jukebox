@@ -13,9 +13,10 @@ defineOptions({ name: "soundGrid" });
 
 <style scoped lang="scss">
 .sound-grid {
+  width: 80%;
   @include grid(
-    repeat(6, calc(100% / 6)),
-    repeat(4, calc(100% / 5)),
+    repeat(auto-fit, minmax(200px, 1fr)),
+    repeat(auto-fit, minmax(calc(100% / 5), 1fr)),
     $spacing-xxl,
     center,
     center,
