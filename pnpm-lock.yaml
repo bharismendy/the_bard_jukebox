@@ -40,8 +40,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(vite@6.1.0(@types/node@22.13.4)(jiti@2.4.2)(sass-embedded@1.85.0)(sass@1.83.4))(vue@3.5.13(typescript@5.7.3))
       '@vitest/eslint-plugin':
-        specifier: 1.1.25
-        version: 1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.0.0)(sass-embedded@1.85.0)(sass@1.83.4))
+        specifier: 1.1.31
+        version: 1.1.31(@typescript-eslint/utils@8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.0.0)(sass-embedded@1.85.0)(sass@1.83.4))
       '@vue/eslint-config-prettier':
         specifier: ^10.2.0
         version: 10.2.0(eslint@9.20.1(jiti@2.4.2))(prettier@3.5.1)
@@ -810,8 +810,8 @@ packages:
       vite: ^5.0.0 || ^6.0.0
       vue: ^3.2.25
 
-  '@vitest/eslint-plugin@1.1.25':
-    resolution: {integrity: sha512-u8DpDnMbPcqBmJOB4PeEtn6q7vKmLVTLFMpzoxSAo0hjYdl4iYSHRleqwPQo0ywc7UV0S6RKIahYRQ3BnZdMVw==}
+  '@vitest/eslint-plugin@1.1.31':
+    resolution: {integrity: sha512-xlsLr+e+AXZ/00eVZCtNmMeCJoJaRCoLDiAgLcxgQjSS1EertieB2MUHf8xIqPKs9lECc/UpL+y1xDcpvi02hw==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.0'
       eslint: '>= 8.57.0'
@@ -3115,7 +3115,7 @@ snapshots:
       vite: 6.1.0(@types/node@22.13.4)(jiti@2.4.2)(sass-embedded@1.85.0)(sass@1.83.4)
       vue: 3.5.13(typescript@5.7.3)
 
-  '@vitest/eslint-plugin@1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.0.0)(sass-embedded@1.85.0)(sass@1.83.4))':
+  '@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.0.0)(sass-embedded@1.85.0)(sass@1.83.4))':
     dependencies:
       '@typescript-eslint/utils': 8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)
       eslint: 9.20.1(jiti@2.4.2)
